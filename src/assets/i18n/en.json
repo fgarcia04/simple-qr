@@ -1,5 +1,4 @@
 {
-  "HOLA": "Hello",
-  "BIENVENIDO": "Welcome",
-  "SALUDO": "Hi, {{ value }}"
+  "SCAN": "History",
+  "HISTORY": "History"
  }

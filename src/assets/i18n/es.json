@@ -1,9 +1,4 @@
 {
-  "HOLA": "Hola",
-  "BIENVENIDO": "Bienvenido",
-  "SALUDO": "Hola, {{ value }}"
- }{
-  "HOLA": "Hola",
-  "BIENVENIDO": "Bienvenido",
-  "SALUDO": "Hola, {{ value }}"
+  "Scan": "Escaner",
+  "History": "Historial"
  }
