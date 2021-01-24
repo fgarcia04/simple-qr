@@ -11,13 +11,15 @@ import { AppComponent } from './app.component';
 import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from "@angular/common/http";
+import { Globalization } from '@ionic-native/globalization/ngx';
+
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
   imports: [
     BrowserModule, 
-    HttpClientModule, 
+    HttpClientModule,
     IonicModule.forRoot(), 
     AppRoutingModule,
     TranslateModule.forRoot({
@@ -30,6 +32,7 @@ import { HttpClient, HttpClientModule } from "@angular/common/http";
   ],
   providers: [
     StatusBar,
+    Globalization,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
