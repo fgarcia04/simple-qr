@@ -18,8 +18,8 @@ export class AppComponent {
     private statusBar: StatusBar,
     private translateService: TranslateService
   ) {
-    this.translateService.setDefaultLang('es');
-    this.translateService.use('es'); 
+    this.translateService.setDefaultLang('en');
+    this.translateService.use('en'); 
     this.initializeApp();
   }
 
