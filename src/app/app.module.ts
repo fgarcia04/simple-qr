@@ -20,9 +20,9 @@ import { IonicStorageModule } from '@ionic/storage';
   declarations: [AppComponent],
   entryComponents: [],
   imports: [
-    BrowserModule, 
+    BrowserModule,
     HttpClientModule,
-    IonicModule.forRoot(), 
+    IonicModule.forRoot(),
     AppRoutingModule,
     IonicStorageModule.forRoot(),
     TranslateModule.forRoot({
@@ -36,17 +36,19 @@ import { IonicStorageModule } from '@ionic/storage';
   providers: [
     BarcodeScanner,
     StatusBar,
+    Storage,
     Globalization,
     SplashScreen,
-    { provide: 
-      RouteReuseStrategy, 
-      useClass: 
-      IonicRouteStrategy 
+    {
+      provide:
+        RouteReuseStrategy,
+      useClass:
+        IonicRouteStrategy
     }
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');

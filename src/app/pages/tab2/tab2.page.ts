@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { PopoverController } from '@ionic/angular';
 import { PopoverMenuComponent } from 'src/app/components/popover-menu/popover-menu.component';
+import { DataLocalService } from 'src/app/services/data-local.service';
 
 
 @Component({
@@ -10,7 +11,8 @@ import { PopoverMenuComponent } from 'src/app/components/popover-menu/popover-me
 })
 export class Tab2Page {
 
-  constructor(public popoverController: PopoverController) {}
+  constructor(private popoverController: PopoverController,
+    public dataLocalService: DataLocalService) { }
 
 
   async openMenu(ev: any) {
@@ -20,6 +22,10 @@ export class Tab2Page {
       translucent: true
     });
     return await popover.present();
+  }
+
+  openRegistry(){
+    console.log('OPEN');
   }
 
 }

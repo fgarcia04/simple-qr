@@ -1,4 +1,4 @@
-export class Registry{
+export class Registry {
 
     private format: string;
     private text: string;
@@ -6,18 +6,19 @@ export class Registry{
     private icon: string;
     private created: Date;
 
-    constructor( format: string, text: string ){
+    constructor(format: string, text: string) {
 
         this.format = format;
-        this.format = format;
-        this.created =  new Date();
+        this.text = text;
+        this.created = new Date();
         this.getType();
 
     }
 
-    private getType(){
+    private getType() {
         const type = this.text.substr(0, 4);
-        switch(type){
+        console.log(type);
+        switch (type) {
             case 'http':
                 this.type = 'http';
                 this.icon = 'globe';
@@ -32,5 +33,5 @@ export class Registry{
 
         }
     }
-    
+
 }
