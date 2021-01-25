@@ -13,6 +13,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from "@angular/common/http";
 import { Globalization } from '@ionic-native/globalization/ngx';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
+import { IonicStorageModule } from '@ionic/storage';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
     HttpClientModule,
     IonicModule.forRoot(), 
     AppRoutingModule,
+    IonicStorageModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
