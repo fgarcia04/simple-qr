@@ -12,6 +12,7 @@ import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from "@angular/common/http";
 import { Globalization } from '@ionic-native/globalization/ngx';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
 
 
 @NgModule({
@@ -31,10 +32,15 @@ import { Globalization } from '@ionic-native/globalization/ngx';
     })
   ],
   providers: [
+    BarcodeScanner,
     StatusBar,
     Globalization,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: 
+      RouteReuseStrategy, 
+      useClass: 
+      IonicRouteStrategy 
+    }
   ],
   bootstrap: [AppComponent]
 })

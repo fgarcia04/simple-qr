@@ -1,2 +1,11 @@
 <ion-content [fullscreen]="true">
+    <ion-grid>
+        <ion-row class="ion-align-items-center">
+            <ion-col size="12" class="ion-text-center">
+                <ion-button expand="full" fill="outline" size="large" shape="round" (click)="scanCode()">
+                    {{ 'Scan' | translate }}
+                </ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </ion-content>
