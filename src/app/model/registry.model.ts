@@ -9,7 +9,7 @@ export class Registry {
     constructor(format: string, text: string) {
 
         this.format = format;
-        this.text = text;
+        this.text = format;
         this.created = new Date();
         this.getType();
 
